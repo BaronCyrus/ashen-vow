@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+dist/
+.DS_Store
+*.local
+*.log
+.qa/
+test-results/
+.env
+.env.*
+CODEX_PROMPT.txt
+codex-run.log

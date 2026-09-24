@@ -1,0 +1,20 @@
+const paths: Record<string, string> = {
+  sword: '<path d="m8 17 11-13 1 1-3 13-9-1Z"/><path d="m5 14 6 6M8 17l-5 5m-1-2 3 3"/>',
+  weapon: '<path d="m8 17 11-13 1 1-3 13-9-1Z"/><path d="m5 14 6 6M8 17l-5 5m-1-2 3 3"/>',
+  armor: '<path d="m8 3-5 3 2 5 3-2v12h10V9l3 2 2-5-6-3-4 3-5-3Z"/><path d="M13 7v12m-4-7h8"/>',
+  boots: '<path d="M7 3h8l-1 12 6 3v3H5v-7L7 3Z"/><path d="M6 7h8M5 17h9"/>',
+  amulet: '<path d="M5 3c0 9 3 11 7 12 4-1 7-3 7-12"/><path d="m12 12 5 5-5 6-5-6 5-5Z"/><path d="M12 15v5"/>',
+  nova: '<path d="M12 2 9 9 2 7l5 6-4 6 7-2 3 6 2-7 7 1-5-5 4-7-7 3-2-6Z"/><path d="m12 8-4 5 5 3 3-5-4-3Z"/>',
+  dash: '<path d="m13 3-6 9h6l-2 9 10-13h-7l-1-5Z"/><path d="M3 6h5M1 12h3m-2 6h4"/>',
+  potion: '<path d="M9 2h6v5l5 6v6l-3 3H7l-3-3v-6l5-6V2Z"/><path d="M8 6h8M5 14h14m-7-3v8m-3-4h6"/>',
+  bag: '<path d="M5 8h14l2 14H3L5 8Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2m-9 5h10m-6-2v5h2v-5"/>',
+  skull: '<path d="M5 14a9 9 0 1 1 14 0l-2 2v5H7v-5l-2-2Z"/><path d="m7 9 3 2-3 2V9Zm10 0-3 2 3 2V9Zm-5 5-1 2h2l-1-2Zm-2 4v3m4-3v3"/>',
+  coin: '<path d="m12 2 9 5v10l-9 5-9-5V7l9-5Z"/><path d="m12 6 5 3v6l-5 3-5-3V9l5-3Zm0 2v8"/>',
+  sound: '<path d="m3 9 5 0 5-5v16l-5-5H3V9Zm13-2c4 2 4 8 0 10m3-13c7 4 7 12 0 16"/>',
+  mute: '<path d="m3 9 5 0 5-5v16l-5-5H3V9Zm13 0 6 6m0-6-6 6"/>',
+  pause: '<path d="M7 4h3v16H7V4Zm7 0h3v16h-3V4Z"/>',
+  arrow: '<path d="M3 12h18m-6-6 6 6-6 6"/>',
+  close: '<path d="m6 6 12 12M6 18 18 6"/>',
+  sigil: '<path d="m12 1 10 11-10 11L2 12 10 1Z"/><path d="m7 17 5-11 5 11m-8-4h6m-3-7v13"/>',
+};
+export const icon = (name: string, className = ''): string => `<svg class="icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] ?? paths.sigil}</svg>`;
