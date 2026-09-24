@@ -1,5 +1,7 @@
 # Ashen Vow — The Hollow Sanctum
 
+**试玩 / Play:** https://baroncyrus.github.io/ashen-vow/
+
 A complete, browser-playable, dark fantasy loot-grind ARPG prototype. Play an oathbound knight in a ruined cathedral, cut through escalating waves of the fallen, and turn their relics into a stronger build. Every third wave summons an elite warden carrying a legendary item. Death ends the run; your personal best remains.
 
 Built with **Vite, TypeScript, and Three.js**, without a UI framework, game engine, backend, or external asset service. All meshes, stone textures, sigils, lighting, effects, and sounds are generated locally. The production site needs only the contents of `dist/`.
